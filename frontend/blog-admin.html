@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Blog Management - Travel Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">TravelWebsite</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="admin.html">Admin Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Blog Management Section -->
+    <section class="blog-admin">
+        <h1>Admin Blog Management</h1>
+        <form id="blogForm">
+            <label for="title">Blog Title:</label>
+            <input type="text" id="title" name="title" placeholder="Enter blog title" required>
+
+            <label for="image">Blog Image URL:</label>
+            <input type="text" id="image" name="image" placeholder="Enter image URL" required>
+
+            <label for="description">Blog Description:</label>
+            <textarea id="description" name="description" placeholder="Enter blog description" required></textarea>
+
+            <button type="submit">Add Blog Post</button>
+        </form>
+
+        <h2>Existing Blog Posts</h2>
+        <div class="blog-list">
+            <!-- Example blog post (these will be dynamically generated via backend) -->
+            <div class="blog-item">
+                <h3>Top 10 Travel Tips</h3>
+                <button onclick="editBlog()">Edit</button>
+                <button onclick="deleteBlog()">Delete</button>
+            </div>
+            <div class="blog-item">
+                <h3>How to Travel on a Budget</h3>
+                <button onclick="editBlog()">Edit</button>
+                <button onclick="deleteBlog()">Delete</button>
+            </div>
+            <!-- More blog items will be loaded dynamically -->
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 TravelWebsite. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </footer>
+
+    <script src="js/blog-admin.js"></script>
+</body>
+</html>

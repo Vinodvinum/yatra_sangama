@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Travel Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">TravelWebsite</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="admin.html" class="active">Admin Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Admin Dashboard Section -->
+    <section class="admin-dashboard">
+        <h1>Admin Dashboard</h1>
+        <div class="dashboard-content">
+            <div class="card">
+                <h2>Total Bookings</h2>
+                <p id="totalBookings">Loading...</p>
+            </div>
+            <div class="card">
+                <h2>Total Users</h2>
+                <p id="totalUsers">Loading...</p>
+            </div>
+            <div class="card">
+                <h2>Total Blog Posts</h2>
+                <p id="totalBlogs">Loading...</p>
+            </div>
+        </div>
+
+        <h2>Manage Bookings</h2>
+        <table id="bookingsTable">
+            <thead>
+                <tr>
+                    <th>Booking ID</th>
+                    <th>User</th>
+                    <th>Pickup Location</th>
+                    <th>Drop-off Location</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Cab Type</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Booking data will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 TravelWebsite. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </footer>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
